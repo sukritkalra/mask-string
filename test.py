@@ -8,6 +8,7 @@ class TestMaskString(unittest.TestCase):
 		self.assertEqual(mask_string('Hello world!', 2, -1), 'He****')
 		self.assertEqual(mask_string('Hello world!', 2, 7, mask='...'), 'He...rld!')
 		self.assertEqual(mask_string('Hello world!', 0, 7, mask='...'), '...rld!')
+		self.assertEqual(mask_string('Hello world!', 20, -1), 'Hello world!****')
 
 
 if __name__ == '__main__':

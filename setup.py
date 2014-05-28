@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
 	name='mask-string',
-	version='0.0.1',
+	version='0.0.2',
 	description='help masking string especialy for credit card number and phone number',
 	author='yangchen',
 	author_email='yuhan534@126.com',
