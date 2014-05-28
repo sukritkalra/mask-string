@@ -1,9 +1,9 @@
 import sys
 
-def mask_string(str, start, stop, mask='****'):
-	length = len(str)
+def mask_string(string, start, stop, mask='****'):
+	length = len(string)
 	start = start % length
 	stop = stop % length
-	return str[:start] + mask + str[stop+1:]
+	return string[:start] + mask + string[stop+1:]
 
 sys.modules[__name__] = mask_string
